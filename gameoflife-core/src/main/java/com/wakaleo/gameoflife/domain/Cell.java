@@ -1,9 +1,11 @@
 package com.wakaleo.gameoflife.domain;
 
 public enum Cell {
+    //define cell signal
     LIVE_CELL("*"), DEAD_CELL(".");
 
     private String symbol;
+    private int version=1;
 
     private Cell(final String initialSymbol) {
         this.symbol = initialSymbol;
